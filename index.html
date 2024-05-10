@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./style/index.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./services/values.js" type="text/javascript"></script>
+</head>
+<header>
+    <title>Virtual Machine Searcher</title>
+    <h1>Virtual Machine Searcher</h1>
+</header>
+
+<body>
+    <form>
+        <div>
+            <!-- <label for="ramName">RAM (in GB):</label> -->
+            <input min="1" type="number" id="ram" name="fname" placeholder="RAM (in GB)">
+       
+            <!-- <label for="cpuName">vCPU cores:</label> -->
+            <input min="1" type="number" id="cores" name="fname" placeholder="vCPU cores:">
+        
+            <select id="os"> 
+                <option>Select</option> 
+                <option>Windows</option> 
+                <option>Linux</option> 
+            </select>
+        </div>
+        <button class="btn" type="submit" onclick="displayResult()">Search</button>
+    </form>
+    <table>
+        <caption>Cost Effective VM's</caption>
+        <thead>
+            <th class="th">Name</th>
+            <th class="th">Ram</th>
+            <th class="th">Cores</th>
+            <th class="th">OS</th>
+            <th class="th">Price</th>
+        </thead>
+        <tbody id="tBody">
+
+        </tbody>
+    </table>
+    <table>
+        <caption>Most Expensive VM's</caption>
+        <thead>
+            <th class="th">Name</th>
+            <th class="th">Ram</th>
+            <th class="th">Cores</th>
+            <th class="th">OS</th>
+            <th class="th">Price</th>
+        </thead>
+        <tbody id="tBody2">
+
+        </tbody>
+    </table>
+    <table>
+        <caption>Medium Priced VM</caption>
+        <thead>
+            <th class="th">VM's Medium Price</th>
+        </thead>
+        <tbody id="tBody3">
+
+        </tbody>
+    </table>
+    <script src="./js/index.js" type="text/javascript"></script>
+</body>
+<footer>
+</footer>
+
+</html>
